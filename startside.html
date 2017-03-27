@@ -4,33 +4,11 @@
 	<meta charset="utf-8">
 	<title>Startside</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
-<body class="page-background">
-	<div>
-		<h1>Vær hilset, Anders Benjamin Grinde!</h1>
-	</div>
-	<div class="search">
-		<!-- <script>
-  			(function() {
-    		var cx = '006443081356584268924:lgnoqtwqbau';
-	    	var gcse = document.createElement('script');
-    		gcse.type = 'text/javascript';
-    		gcse.async = true;
-    		gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    		var s = document.getElementsByTagName('script')[0];
-    		s.parentNode.insertBefore(gcse, s);
-		  	})();
-		</script>
-		<gcse:searchbox-only></gcse:searchbox-only>
-		Dette er hvis jeg vil ha custom search box fra google -->
-
-
-		<form method="get" action="http://www.google.com/search">
-			<input type="text" name="q" size="30" placeholder="Search Google" />
-			<input type="submit" name="Search" value="Search" />
-		</form>
-	</div>
-	<div class="mostvisited-list">
+<body class="page-background" onload="displayTime()">
+	<div class="parent">
+		<div class="mostvisited-list">
 			<p class="text-style">Sider du ofte besøker:</p>
 			<p><a href="http://www.youtube.com/feed/subscriptions" class="text-style">Youtube subscriptions</a></p>
 			<p><a href="http://www.facebook.com" class="text-style">Facebook</a></p>
@@ -38,6 +16,21 @@
 			<p><a href="http://www.9gag.com" class="text-style">9gag</a></p>
 			<p><a href="http://hib.itslearning.com" class="text-style">itslearning</a></p>
 			<p><a href="https://no.timeedit.net/web/hib/db1/student/ri1Q51.html" class="text-style">Bestill grupperom</a></p>
+		</div>
+		<div clas="greetingsbox">
+			<div>
+				<h1><script>greeting()</script></h1>
+			</div>
+			<div class="search">
+				<form method="get" action="http://www.google.com/search">
+					<input type="text" name="q" size="30" placeholder="Search Google" />
+					<input type="submit" name="Search" value="Search" />
+				</form>
+			</div>
+		</div>
+		<div class="clock" id="clockcontrol">	
+
+		</div>
 	</div>
 </body>
 </html>

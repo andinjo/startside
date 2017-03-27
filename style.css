@@ -4,27 +4,46 @@
 }
 
 h1 {
+	font-size: 25px;
 	display: flex;
 	justify-content: center;
 	color: #fff;
 	margin-top: 20%;
 }
 
-.search {
+.parent {
 	display: flex;
-	justify-content: center;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-top: 15%;
+	justify-content: space-between;
+}
+
+.greetingsbox {
+	flex: 1;
 }
 
 .mostvisited-list {
-	display: flex;
+	width: 250px;
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 20px;
 	background-color: rgba(20,10,70,0.7);
-	margin-right: 80%;
 	margin-left: 0 auto;
+}
+
+.clock {
+	width: 250px;
+	margin-top: 10%;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-style: "Comic Sans MS";
+	color: #fff;
+
+}
+
+.search {
+	justify-content: center;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 a:hover {
