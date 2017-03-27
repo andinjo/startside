@@ -1,0 +1,38 @@
+.page-background {
+	background: url("pictures/wallpaper.jpg");
+	background-size: cover;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	margin-top: 20%;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.mostvisited-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: rgba(20,10,70,0.7);
+	margin-right: 80%;
+	margin-left: 0 auto;
+}
+
+a:hover {
+	color: pink;
+}
+
+.text-style {
+	transition: 1s;
+	text-decoration: none;
+	color: white;
+}
